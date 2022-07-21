@@ -1,4 +1,4 @@
-package com.ahasbini.tools.androidopencv.internal.model;
+package fr.akylas.androidopencv.internal.model;
 
 import java.io.File;
 import java.io.Serializable;

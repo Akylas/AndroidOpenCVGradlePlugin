@@ -1,12 +1,12 @@
-package com.ahasbini.tools.androidopencv.task;
+package fr.akylas.androidopencv.task;
 
-import com.ahasbini.tools.androidopencv.AndroidOpenCVExtension;
-import com.ahasbini.tools.androidopencv.Constants;
-import com.ahasbini.tools.androidopencv.PluginException;
-import com.ahasbini.tools.androidopencv.internal.service.FilesManager;
-import com.ahasbini.tools.androidopencv.internal.service.Injector;
-import com.ahasbini.tools.androidopencv.internal.util.ExceptionUtils;
-import com.ahasbini.tools.androidopencv.internal.util.Logger;
+import fr.akylas.androidopencv.AndroidOpenCVExtension;
+import fr.akylas.androidopencv.Constants;
+import fr.akylas.androidopencv.PluginException;
+import fr.akylas.androidopencv.internal.service.FilesManager;
+import fr.akylas.androidopencv.internal.service.Injector;
+import fr.akylas.androidopencv.internal.util.ExceptionUtils;
+import fr.akylas.androidopencv.internal.util.Logger;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.NonNullApi;

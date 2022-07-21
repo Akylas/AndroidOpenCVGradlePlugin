@@ -15,7 +15,7 @@ buildscript {
 }
 
 apply plugin: 'com.android.library'
-apply plugin: 'com.ahasbini.android-opencv-gradle-plugin'
+apply plugin: 'com.akylas.android-opencv-gradle-plugin'
 
 android {
     compileSdkVersion 27

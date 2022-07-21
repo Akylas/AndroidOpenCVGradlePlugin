@@ -13,4 +13,4 @@ buildscript {
     }
 }
 
-apply plugin: 'com.ahasbini.android-opencv-gradle-plugin'
+apply plugin: 'com.akylas.android-opencv-gradle-plugin'

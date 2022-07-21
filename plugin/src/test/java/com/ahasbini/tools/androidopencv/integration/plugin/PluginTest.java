@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.integration.plugin;
+package fr.akylas.androidopencv.integration.plugin;
 
-import com.ahasbini.tools.androidopencv.integration.BaseIntegrationTest;
+import fr.akylas.androidopencv.integration.BaseIntegrationTest;
 
 import org.junit.Test;
 

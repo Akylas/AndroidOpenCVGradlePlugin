@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.functional.plugin;
+package fr.akylas.androidopencv.functional.plugin;
 
-import com.ahasbini.tools.androidopencv.functional.BaseFunctionalTest;
+import fr.akylas.androidopencv.functional.BaseFunctionalTest;
 
 /**
  * Created by ahasbini on 03-Nov-19.

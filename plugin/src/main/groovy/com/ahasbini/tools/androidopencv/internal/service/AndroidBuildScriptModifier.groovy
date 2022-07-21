@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.internal.service
+package fr.akylas.androidopencv.internal.service
 
-import com.ahasbini.tools.androidopencv.internal.util.Logger
+import fr.akylas.androidopencv.internal.util.Logger
 import groovy.transform.PackageScope
 import org.gradle.api.Project
 /**

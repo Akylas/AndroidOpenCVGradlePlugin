@@ -1,4 +1,4 @@
-package com.ahasbini.sample;
+package com.akylas.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

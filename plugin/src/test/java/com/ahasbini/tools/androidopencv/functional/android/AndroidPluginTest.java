@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.functional.android;
+package fr.akylas.androidopencv.functional.android;
 
-import com.ahasbini.tools.androidopencv.functional.BaseFunctionalTest;
+import fr.akylas.androidopencv.functional.BaseFunctionalTest;
 
 import org.gradle.testkit.runner.BuildResult;
 import org.junit.Assert;

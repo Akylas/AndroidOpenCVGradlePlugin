@@ -1,4 +1,4 @@
-package com.ahasbini.tools.androidopencv.functional.plugin;
+package fr.akylas.androidopencv.functional.plugin;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

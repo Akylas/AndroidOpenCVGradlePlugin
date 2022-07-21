@@ -1,7 +1,7 @@
-package com.ahasbini.tools.androidopencv.internal.service;
+package fr.akylas.androidopencv.internal.service;
 
-import com.ahasbini.tools.androidopencv.AndroidOpenCVExtension;
-import com.ahasbini.tools.androidopencv.internal.model.Cache;
+import fr.akylas.androidopencv.AndroidOpenCVExtension;
+import fr.akylas.androidopencv.internal.model.Cache;
 
 import org.gradle.api.Project;
 

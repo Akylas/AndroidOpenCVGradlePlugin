@@ -1,7 +1,7 @@
-package com.ahasbini.tools.androidopencv.unit.plugin;
+package fr.akylas.androidopencv.unit.plugin;
 
-import com.ahasbini.tools.androidopencv.unit.BaseUnitTest;
-import com.ahasbini.tools.androidopencv.internal.util.ExceptionUtils;
+import fr.akylas.androidopencv.unit.BaseUnitTest;
+import fr.akylas.androidopencv.internal.util.ExceptionUtils;
 
 import org.junit.Assert;
 import org.junit.Test;

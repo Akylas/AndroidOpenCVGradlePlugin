@@ -1,8 +1,8 @@
-package com.ahasbini.tools.androidopencv.unit.plugin;
+package fr.akylas.androidopencv.unit.plugin;
 
-import com.ahasbini.tools.androidopencv.internal.service.FilesManager;
-import com.ahasbini.tools.androidopencv.internal.service.Injector;
-import com.ahasbini.tools.androidopencv.unit.BaseUnitTest;
+import fr.akylas.androidopencv.internal.service.FilesManager;
+import fr.akylas.androidopencv.internal.service.Injector;
+import fr.akylas.androidopencv.unit.BaseUnitTest;
 
 import org.gradle.api.Project;
 import org.junit.Assert;

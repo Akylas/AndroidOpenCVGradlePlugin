@@ -1,4 +1,4 @@
-package com.ahasbini.tools.androidopencv;
+package fr.akylas.androidopencv;
 
 /**
  * Created by ahasbini on 08-Dec-19.

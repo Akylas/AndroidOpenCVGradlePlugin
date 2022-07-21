@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.functional.plugin;
+package fr.akylas.androidopencv.functional.plugin;
 
-import com.ahasbini.tools.androidopencv.functional.BaseFunctionalTest;
+import fr.akylas.androidopencv.functional.BaseFunctionalTest;
 
 import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.TaskOutcome;
@@ -217,7 +217,7 @@ public class PluginConfigurationTest extends BaseFunctionalTest {
                 "     :cleanAndroidOpenCVBuildCache\r\n" +
                 "\r\n" +
                 "Type\r\n" +
-                "     CleanAndroidOpenCVBuildCacheTask (com.ahasbini.tools.androidopencv.task.CleanAndroidOpenCVBuildCacheTask)\r\n" +
+                "     CleanAndroidOpenCVBuildCacheTask (fr.akylas.androidopencv.task.CleanAndroidOpenCVBuildCacheTask)\r\n" +
                 "\r\n" +
                 "Options\r\n" +
                 "     --all     Cleans all versions\r\n" +

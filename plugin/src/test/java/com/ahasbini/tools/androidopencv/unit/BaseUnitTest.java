@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.unit;
+package fr.akylas.androidopencv.unit;
 
-import com.ahasbini.tools.androidopencv.BaseTest;
+import fr.akylas.androidopencv.BaseTest;
 
 /**
  * Created by ahasbini on 03-Nov-19.

@@ -25,7 +25,7 @@ For usage in an Android Project, the below changes are needed:
         }
         dependencies {
             // ... the Android plugin and other classpath definitions
-            classpath 'com.ahasbini.tools:android-opencv-gradle-plugin:0.1.+'
+            classpath 'com.akylas:android-opencv-gradle-plugin:0.1.+'
         }
     }
     ```
@@ -37,7 +37,7 @@ For usage in an Android Project, the below changes are needed:
 
     ```gradle
     // apply plugin: 'com.android.application' or other Android plugin
-    apply plugin: 'com.ahasbini.android-opencv-gradle-plugin' // After the Android plugin
+    apply plugin: 'com.akylas.android-opencv-gradle-plugin' // After the Android plugin
     
     // ...
     
@@ -130,7 +130,7 @@ along with JNI binaries into the project using ```dependencies``` and
 
 In detail, below are the steps it carries out (primarily in this order):
 
- - **[AndroidOpenCVGradlePlugin.java](plugin/src/main/java/com/ahasbini/tools/androidopencv/AndroidOpenCVGradlePlugin.java)
+ - **[AndroidOpenCVGradlePlugin.java](plugin/src/main/java/com/akylas/tools/androidopencv/AndroidOpenCVGradlePlugin.java)
    (Configuration Phase)**
    - Extract the requested version of OpenCV from the ```androidOpenCV```
    block.
@@ -141,20 +141,20 @@ In detail, below are the steps it carries out (primarily in this order):
    and add dependencies ```debugImplementation``` and
    ```releaseImplementation``` with the names of the AARs to project
    ```dependencies```.
- - **[DownloadAndroidOpenCVTask.java](plugin/src/main/java/com/ahasbini/tools/androidopencv/task/DownloadAndroidOpenCVTask.java)
+ - **[DownloadAndroidOpenCVTask.java](plugin/src/main/java/com/akylas/tools/androidopencv/task/DownloadAndroidOpenCVTask.java)
    (Execution Phase)**
    - Download the ```opencv-xxx-android-sdk.zip``` into the directory 
    ```{user_home}/.androidopencv/{version}``` using the url template
    ```"https://sourceforge.net/projects/opencvlibrary/files/" + version + "/opencv-" + version + "-android-sdk.zip"```.
- - **[UnZipAndroidOpenCVTask.java](plugin/src/main/java/com/ahasbini/tools/androidopencv/task/UnZipAndroidOpenCVTask.java)
+ - **[UnZipAndroidOpenCVTask.java](plugin/src/main/java/com/akylas/tools/androidopencv/task/UnZipAndroidOpenCVTask.java)
    (Execution Phase)**
    - Extract the downloaded zip file within the 
    ```{user_home}/.androidopencv/{version}``` folder.
- - **[CopyAndroidOpenCVJniLibsTask.java](plugin/src/main/java/com/ahasbini/tools/androidopencv/task/CopyAndroidOpenCVJniLibsTask.java)
+ - **[CopyAndroidOpenCVJniLibsTask.java](plugin/src/main/java/com/akylas/tools/androidopencv/task/CopyAndroidOpenCVJniLibsTask.java)
    (Execution Phase)**
    - Copy the JNI libs/directories from the extracted zip folder into 
    ```{project_module_directory}/build/androidopencv```.
- - **[BuildAndroidOpenCVAarsTask.java](plugin/src/main/java/com/ahasbini/tools/androidopencv/task/BuildAndroidOpenCVAarsTask.java)
+ - **[BuildAndroidOpenCVAarsTask.java](plugin/src/main/java/com/akylas/tools/androidopencv/task/BuildAndroidOpenCVAarsTask.java)
    (Execution Phase)**
    - Compile AAR binaries from Java source and place outputs (debug and
    release builds) in
@@ -171,7 +171,7 @@ builds to the local machine for use in other projects. This can be done
 similar to to the below steps:
 
 ```shell
-git clone https://github.com/ahasbini/AndroidOpenCVGradlePlugin.git
+git clone https://github.com/akylas/AndroidOpenCVGradlePlugin.git
 cd AndroidOpenCVGradlePlugin
 
 # Perform some code changes and run some tests in your favorite IDE/Editor
@@ -184,7 +184,7 @@ gradlew.bat :plugin:publishToMavenLocal
 
 Once commands above complete to succession, the plugin is now located
 in the local Maven repository of the machine (```.m2```) under
-```com\ahasbini\tools\android-opencv-gradle-plugin```.
+```com\akylas\android-opencv-gradle-plugin```.
 
 With regards to the test cases, the current tests executed for the 
 plugin can be found in the [test](plugin/src/test/java) folder which 

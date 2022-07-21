@@ -1,4 +1,4 @@
-package com.ahasbini.tools.androidopencv.internal.service;
+package fr.akylas.androidopencv.internal.service;
 
 import java.io.IOException;
 

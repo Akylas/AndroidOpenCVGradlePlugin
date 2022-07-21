@@ -1,16 +1,16 @@
-package com.ahasbini.tools.androidopencv;
+package fr.akylas.androidopencv;
 
-import com.ahasbini.tools.androidopencv.internal.service.AndroidBuildScriptModifier;
-import com.ahasbini.tools.androidopencv.internal.service.Injector;
-import com.ahasbini.tools.androidopencv.internal.util.ExceptionUtils;
-import com.ahasbini.tools.androidopencv.internal.util.Logger;
-import com.ahasbini.tools.androidopencv.task.BuildAndroidOpenCVAarsTask;
-import com.ahasbini.tools.androidopencv.task.CleanAndroidOpenCVBuildCacheTask;
-import com.ahasbini.tools.androidopencv.task.CleanAndroidOpenCVBuildFolderTask;
-import com.ahasbini.tools.androidopencv.task.CopyAndroidOpenCVJniLibsTask;
-import com.ahasbini.tools.androidopencv.task.DownloadAndroidOpenCVTask;
-import com.ahasbini.tools.androidopencv.task.SetupAndroidOpenCVTask;
-import com.ahasbini.tools.androidopencv.task.UnZipAndroidOpenCVTask;
+import fr.akylas.androidopencv.internal.service.AndroidBuildScriptModifier;
+import fr.akylas.androidopencv.internal.service.Injector;
+import fr.akylas.androidopencv.internal.util.ExceptionUtils;
+import fr.akylas.androidopencv.internal.util.Logger;
+import fr.akylas.androidopencv.task.BuildAndroidOpenCVAarsTask;
+import fr.akylas.androidopencv.task.CleanAndroidOpenCVBuildCacheTask;
+import fr.akylas.androidopencv.task.CleanAndroidOpenCVBuildFolderTask;
+import fr.akylas.androidopencv.task.CopyAndroidOpenCVJniLibsTask;
+import fr.akylas.androidopencv.task.DownloadAndroidOpenCVTask;
+import fr.akylas.androidopencv.task.SetupAndroidOpenCVTask;
+import fr.akylas.androidopencv.task.UnZipAndroidOpenCVTask;
 
 import org.gradle.api.Action;
 import org.gradle.api.NonNullApi;

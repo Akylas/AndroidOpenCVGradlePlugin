@@ -11,7 +11,7 @@ buildscript {
         //noinspection GradleDependency
         classpath 'com.android.tools.build:gradle:3.4.2'
         //noinspection GradleDynamicVersion
-        classpath 'com.ahasbini.tools:android-opencv-gradle-plugin:0.1.+'
+        classpath 'com.akylas:android-opencv-gradle-plugin:0.1.+'
     }
 }
 
@@ -23,7 +23,7 @@ repositories {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.ahasbini.android-opencv-gradle-plugin'
+apply plugin: 'com.akylas.android-opencv-gradle-plugin'
 
 android {
     compileSdkVersion 28

@@ -1,6 +1,6 @@
-package com.ahasbini.test;
+package com.akylas.test;
 
-import com.ahasbini.test.TestLib;
+import com.akylas.test.TestLib;
 
 public class Test {
     public static void main(String[] args) {

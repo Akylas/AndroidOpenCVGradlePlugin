@@ -21,7 +21,7 @@ repositories {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.ahasbini.android-opencv-gradle-plugin'
+apply plugin: 'com.akylas.android-opencv-gradle-plugin'
 
 android {
     compileSdkVersion 27

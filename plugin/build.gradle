@@ -1,13 +1,11 @@
 plugins {
     id 'groovy'
-    id 'java'
-    id 'maven-publish'
-    id "com.github.gmazzo.buildconfig" version "1.6.1"
-    id 'com.gradle.plugin-publish' version '0.10.1'
+    id "com.github.gmazzo.buildconfig" version "3.1.0"
+    id 'com.gradle.plugin-publish' version "1.0.0"
 }
 
-group 'com.ahasbini.tools'
-version '0.1.3-dev'
+group 'fr.akylas'
+version '0.1.4-dev'
 
 sourceCompatibility = 1.8
 
@@ -78,6 +76,10 @@ publishing {
     }
     repositories {
         mavenLocal()
+        maven {
+            name = 'localPluginRepository'
+            url = '../local-plugin-repository'
+        }
     }
 }
 
@@ -99,23 +101,21 @@ task sourceSets {
         }
     }
 }
-
 pluginBundle {
-    description = 'Gradle Plugin that will automate retrieving the Android OpenCV SDK and linking ' +
-            'it to the project, making it easy to include OpenCV into Android applications.'
-    website = 'https://github.com/ahasbini/AndroidOpenCVGradlePlugin'
-    vcsUrl = 'https://github.com/ahasbini/AndroidOpenCVGradlePlugin'
+    website = 'https://github.com/Akylas/AndroidOpenCVGradlePlugin'
+    vcsUrl = 'https://github.com/Akylas/AndroidOpenCVGradlePlugin'
     tags = ['android-opencv', 'gradle-plugin', 'cmake', 'native-libraries', 'opencv',
             'android-application', 'ndk', 'android-ndk', 'opencv-sdk']
+    description = 'Gradle Plugin that will automate retrieving the Android OpenCV SDK and linking ' +
+            'it to the project, making it easy to include OpenCV into Android applications.'
+}
+gradlePlugin {
+    
     plugins {
         androidOpenCVGradlePlugin {
             displayName = "AndroidOpenCVGradlePlugin"
-            id = 'com.ahasbini.android-opencv-gradle-plugin'
+            id = 'fr.akylas.android-opencv-gradle-plugin'
+            implementationClass = 'fr.akylas.androidopencv.AndroidOpenCVGradlePlugin'
         }
-    }
-
-    mavenCoordinates {
-        groupId = project.getGroup()
-        artifactId = 'android-opencv-gradle-plugin'
     }
 }

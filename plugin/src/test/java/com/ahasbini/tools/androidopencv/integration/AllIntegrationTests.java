@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.integration;
+package fr.akylas.androidopencv.integration;
 
-import com.ahasbini.tools.androidopencv.integration.plugin.AllPluginTests;
+import fr.akylas.androidopencv.integration.plugin.AllPluginTests;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

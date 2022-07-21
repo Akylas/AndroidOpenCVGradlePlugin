@@ -1,6 +1,6 @@
-package com.ahasbini.tools.androidopencv.functional;
+package fr.akylas.androidopencv.functional;
 
-import com.ahasbini.tools.androidopencv.BaseTest;
+import fr.akylas.androidopencv.BaseTest;
 
 import org.gradle.internal.impldep.aQute.lib.strings.Strings;
 import org.gradle.testkit.runner.GradleRunner;
